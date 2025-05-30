@@ -1,2 +1,8 @@
 @media (max-width: 991.98px) {
+  .bg-color-shape-1 {
+    display: none;
+  }
+  .bg-color-shape-2 {
+    display: none;
+  }
 }

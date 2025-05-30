@@ -1,2 +1,27 @@
 @media (max-width: 1199.98px) {
+  .nav-link {
+    /* margin-bottom: 10px; */
+    margin-top: 10px;
+  }
+  .request-demo-btn {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  .navbar {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 50px;
+    background: rgba(39, 39, 39, 0.39);
+    padding: 10px;
+    backdrop-filter: blur(10px);
+    margin-top: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .navbar-collapse {
+    padding-bottom: 30px;
+  }
+  .nav-item {
+    padding-bottom: 10px;
+  }
 }
