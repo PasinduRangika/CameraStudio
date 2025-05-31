@@ -24,4 +24,14 @@
   .nav-item {
     padding-bottom: 10px;
   }
+  .sec-type-3 .swiper {
+    width: 100%;
+    height: 50vh;
+  }
+  .sec-type-3 .slider-subtitle {
+    padding: 20px 0px;
+  }
+  .sec-type-5 .title {
+    font-size: 36px;
+  }
 }

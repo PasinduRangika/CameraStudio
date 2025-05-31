@@ -20,4 +20,60 @@
   .sec-type-1 {
     padding: 180px 0px 100px 0px;
   }
+  .sec-type-3 .tag-wrap {
+    flex-direction: column;
+    gap: 15px !important;
+  }
+  .sec-type-3 .tag {
+    font-size: 36px;
+  }
+  .sec-type-3 .icon-wrap {
+    display: none;
+  }
+
+  .sec-type-4 .tag {
+    font-size: 36px;
+  }
+  .sec-type-4 .arrow-wrap {
+    padding-top: 60px;
+  }
+  .sec-type-5 {
+    margin: 0px 0px 60px 0px;
+    overflow: hidden;
+  }
+  .sec-type-5 .main-img {
+    display: none;
+  }
+  .sec-type-5 .title-wrap {
+    position: static;
+    padding: 50px 0px;
+  }
+  .sec-type-5 .subscribe-section {
+    border-radius: 0px;
+  }
+  .sec-type-5 .title {
+    font-size: 36px;
+    text-align: center;
+  }
+  .sec-type-5 .des {
+    text-align: center;
+    font-size: 24px;
+  }
+  .sec-type-5 .subscribe-box {
+    margin: auto;
+  }
+  .sec-type-6 .img-wrap {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .sec-type-6 .footer-title {
+    text-align: center;
+  }
+  .sec-type-6 a {
+    text-align: center;
+  }
 }
