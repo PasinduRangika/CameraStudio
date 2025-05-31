@@ -100,7 +100,7 @@
         </div>
       </div>
     </section>
-    <section class="sec-type-2">
+    <!-- <section class="sec-type-2">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-11 d-flex justify-content-center">
@@ -111,12 +111,16 @@
                 <svg
                   id="playIcon"
                   xmlns="http://www.w3.org/2000/svg"
-                  width="60"
-                  height="60"
-                  fill="white"
-                  viewBox="0 0 24 24"
+                  width="75"
+                  height="75"
+                  viewBox="0 0 75 75"
+                  fill="none"
                 >
-                  <path d="M8 5v14l11-7z" />
+                  <path
+                    d="M37.5 75C16.7906 75 0 58.2094 0 37.5C0 16.7906 16.7906 0 37.5 0C58.2094 0 75 16.7906 75 37.5C75 58.2094 58.2094 75 37.5 75ZM28.125 18.7781V56.2219L56.25 37.5L28.125 18.7781Z"
+                    fill="white"
+                    fill-opacity="0.38"
+                  />
                 </svg>
 
                 <svg
@@ -150,6 +154,58 @@
             video.pause();
             playIcon.style.display = "inline";
             pauseIcon.style.display = "none";
+          }
+        });
+      </script>
+    </section> -->
+    <section class="sec-type-2">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-11 d-flex justify-content-center">
+            <div class="video-wrap position-relative">
+              <video id="customVideo" src="../wp-content/uploads/capherovideo.webm" muted playsinline></video>
+
+              <button id="videoToggleBtn" class="video-toggle-btn">
+                <svg
+                  id="playIcon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="75"
+                  height="75"
+                  viewBox="0 0 75 75"
+                  fill="none"
+                  style="color: brown"
+                >
+                  <path
+                    d="M37.5 75C16.7906 75 0 58.2094 0 37.5C0 16.7906 16.7906 0 37.5 0C58.2094 0 75 16.7906 75 37.5C75 58.2094 58.2094 75 37.5 75ZM28.125 18.7781V56.2219L56.25 37.5L28.125 18.7781Z"
+                    fill="white"
+                    fill-opacity="0.38"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        const video = document.getElementById("customVideo");
+        const toggleBtn = document.getElementById("videoToggleBtn");
+        const playIcon = document.getElementById("playIcon");
+
+        // Ensure video is paused by default
+        video.pause();
+
+        // Click play button to start video
+        toggleBtn.addEventListener("click", () => {
+          video.play();
+          toggleBtn.style.display = "none"; // hide the play icon
+        });
+
+        // Click on video to pause
+        video.addEventListener("click", () => {
+          if (!video.paused) {
+            video.pause();
+            toggleBtn.style.display = "block"; // show play icon again
           }
         });
       </script>
@@ -306,8 +362,8 @@
                       <img src="../wp-content/uploads/subslide_2.png" alt="" class="camera-brand" />
                     </div>
                     <div>
-                      <h5 class="slider-title">Logitech Reach</h5>
-                      <p class="slider-des">Flexible, premium video</p>
+                      <h5 class="slider-title">IPEVO V4K</h5>
+                      <p class="slider-des">High resolution, easy plug & play</p>
                     </div>
                   </div>
                 </div>
@@ -319,8 +375,8 @@
                       <img src="../wp-content/uploads/subslide_3.png" alt="" class="camera-brand" />
                     </div>
                     <div>
-                      <h5 class="slider-title">Logitech Reach</h5>
-                      <p class="slider-des">Flexible, premium video</p>
+                      <h5 class="slider-title">ELMO OX-1</h5>
+                      <p class="slider-des">Lightweight and simple</p>
                     </div>
                   </div>
                 </div>
@@ -332,8 +388,8 @@
                       <img src="../wp-content/uploads/subslide_3.png" alt="" class="camera-brand" />
                     </div>
                     <div>
-                      <h5 class="slider-title">Logitech Reach</h5>
-                      <p class="slider-des">Flexible, premium video</p>
+                      <h5 class="slider-title">ELMO MX-P3</h5>
+                      <p class="slider-des">4K video output, compact design</p>
                     </div>
                   </div>
                 </div>
@@ -344,8 +400,8 @@
                       <img src="../wp-content/uploads/subslide_4.png" alt="" class="camera-brand" />
                     </div>
                     <div>
-                      <h5 class="slider-title">Logitech Reach</h5>
-                      <p class="slider-des">Flexible, premium video</p>
+                      <h5 class="slider-title">Inswan INS-1</h5>
+                      <p class="slider-des">4K video output, compact design</p>
                     </div>
                   </div>
                 </div>
