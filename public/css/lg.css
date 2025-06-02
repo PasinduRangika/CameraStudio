@@ -34,4 +34,7 @@
   .sec-type-5 .title {
     font-size: 36px;
   }
+  .sec-type-3 .icon-wrap {
+    display: none;
+  }
 }
