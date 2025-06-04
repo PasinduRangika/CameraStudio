@@ -175,7 +175,7 @@ html {
 }
 /* sec-type-3 */
 .sec-type-3 {
-  padding: 90px 0px;
+  padding: 60px 0px 40px 0px;
   background: #000;
 }
 .sec-type-3 .tag {
@@ -212,7 +212,9 @@ html {
 
 .sec-type-3 .swiper {
   width: 100%;
-  height: 90vh;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  box-sizing: border-box;
 }
 
 .sec-type-3 .swiper-slide {
@@ -265,7 +267,6 @@ html {
 }
 
 .sec-type-3 .swiper-pagination {
-  bottom: 30px !important;
 }
 
 .sec-type-3 .swiper-pagination-bullet {
@@ -417,7 +418,7 @@ html {
   content: none;
 }
 .sec-type-4 .arrow-wrap {
-  padding-top: 120px;
+  margin-top: 30px;
   display: flex;
   justify-content: end;
   width: 100%;

@@ -28,6 +28,10 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+    <!-- GSAP + ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
     <link rel="stylesheet" href="./css/xxl.css" />
@@ -223,7 +227,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="swiper">
+          <div class="swiper feature-slider">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="slide-container">
@@ -481,13 +485,46 @@
           </div>
         </div>
       </div>
-      <script>
+      <!-- <script>
         new Swiper(".swiper", {
           loop: true,
           pagination: {
             el: ".swiper-pagination",
             clickable: true,
           },
+        });
+      </script> -->
+      <script>
+        // Make sure GSAP & ScrollTrigger are loaded before this block!
+        document.addEventListener("DOMContentLoaded", function () {
+          // Feature Swiper for .sec-type-3 section
+          const featureSwiper = new Swiper(".feature-slider", {
+            direction: "horizontal",
+            loop: false,
+            allowTouchMove: false,
+            pagination: {
+              el: ".feature-slider .swiper-pagination",
+              clickable: true,
+            },
+          });
+
+          const totalFeatureSlides = document.querySelectorAll(".feature-slider .swiper-slide").length;
+
+          gsap.registerPlugin(ScrollTrigger);
+
+          ScrollTrigger.create({
+            trigger: ".sec-type-3",
+            start: "bottom bottom",
+            end: () => "+=" + window.innerHeight * (totalFeatureSlides - 1),
+            pin: true,
+            scrub: true,
+            onUpdate: (self) => {
+              const slideIndex = Math.round(self.progress * (totalFeatureSlides - 1));
+              if (featureSwiper.activeIndex !== slideIndex) {
+                featureSwiper.slideTo(slideIndex);
+              }
+            },
+          });
         });
       </script>
     </section>
