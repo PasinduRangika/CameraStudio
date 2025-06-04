@@ -57,4 +57,37 @@
   .sec-type-5 .title {
     font-size: 24px;
   }
+  .video-toggle-btn {
+    top: 40%;
+    left: 50%;
+  }
+
+  .sec-type-4 .lastcard {
+    height: 537px;
+    position: relative;
+    overflow: hidden;
+  }
+  .sec-type-5 .title-wrap {
+    top: 40px;
+    left: 20px;
+  }
+  .sec-type-5 .des {
+    color: #474747 !important;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  .sec-type-5 .main-img {
+    width: 100%;
+    height: auto;
+  }
+  .sec-type-5 .subscribe-section {
+    justify-content: end;
+  }
+  .sec-type-5 .des1 {
+    margin-top: 10px;
+  }
+  .sec-type-5 .title {
+    margin-bottom: 10px;
+  }
 }

@@ -37,4 +37,21 @@
   .sec-type-3 .icon-wrap {
     display: none;
   }
+  .bg-color-shape-1,
+  .bg-color-shape-2 {
+    display: none;
+  }
+  .sec-type-4 .lastcard {
+    height: 697px;
+  }
+  .sec-type-5 .point-content {
+    font-size: 16px;
+  }
+  .sec-type-5 .main-img {
+    width: 100%;
+    height: auto;
+  }
+  .sec-type-5 .point {
+    margin-left: 8px;
+  }
 }
