@@ -108,4 +108,38 @@
   .sec-type-5 .des1 {
     text-align: center;
   }
+
+  .sec-type-7 .accordion-body {
+    color: #d1d5db;
+    background: #1f1f1f;
+    padding: 10px 10px 30px 20px;
+    border-bottom-left-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+  }
+  .sec-type-7 .accordion-button {
+    font-weight: bold;
+    padding: 30px 10px;
+  }
+  .sec-type-7 .accordion-button:not(.collapsed) {
+    align-items: start;
+  }
+  .sec-type-7 .accordion-button {
+    align-items: start;
+  }
+  .sec-type-7 .title {
+    font-size: 36px;
+    line-height: 150%;
+  }
+  .sec-type-7 {
+    padding: 100px 0px 60px 0px;
+    background: #111;
+  }
+  .sec-type-7 .answer-title {
+    color: #fff;
+    font-size: 16px !important;
+  }
+  .sec-type-7 .answer-des {
+    color: #dbdbdb;
+    font-size: 16px !important;
+  }
 }

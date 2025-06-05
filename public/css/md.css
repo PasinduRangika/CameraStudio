@@ -90,4 +90,7 @@
   .sec-type-5 .title {
     margin-bottom: 10px;
   }
+  .sec-type-7 .title-wrap {
+    flex-direction: column;
+  }
 }

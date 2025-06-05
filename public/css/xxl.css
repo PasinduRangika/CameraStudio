@@ -652,3 +652,182 @@ html {
     transform: scale(1);
   }
 }
+
+/* sec-type-7 */
+.sec-type-7 {
+  padding: 150px 0px 60px 0px;
+  background: #111;
+}
+.sec-type-7 .title {
+  color: #fff;
+  text-align: center;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 90px;
+}
+.sec-type-7 .title span {
+  color: #ffba00 !important;
+}
+.sec-type-7 .title-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 60px;
+}
+.sec-type-7 .title-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.sec-type-7 .img-wrap img {
+  width: 208px;
+  height: 78px;
+}
+.sec-type-7 .accordion-button {
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 30px 55px;
+  border-top-left-radius: 20px !important;
+  border-top-right-radius: 20px !important;
+  color: #fff !important;
+  font-weight: 700 !important;
+  font-size: 20px !important;
+}
+.accordion-item:first-of-type,
+.accordion-item:last-of-type {
+  border-top-left-radius: 20px !important;
+  border-top-right-radius: 20px !important;
+}
+.sec-type-7 .accordion-button:not(.collapsed) {
+  background-color: #1f1f1f !important;
+  color: #3b82f6 !important;
+  box-shadow: none !important;
+  font-weight: 700 !important;
+  font-size: 20px !important;
+}
+
+.sec-type-7 .accordion-body {
+  color: #d1d5db;
+  background: #1f1f1f;
+  padding: 10px 55px 30px 55px;
+  border-bottom-left-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
+}
+.sec-type-7 .faq-card {
+  background: linear-gradient(135deg, rgba(236, 72, 153, 0.2), rgba(244, 63, 94, 0.2));
+  border: 1px solid rgba(236, 72, 153, 0.3);
+  color: #fff;
+}
+.sec-type-7 .faq-card.blue {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(100, 116, 139, 0.2));
+  border-color: rgba(59, 130, 246, 0.3);
+}
+.sec-type-7 .faq-card.green {
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.2), rgba(16, 185, 129, 0.2));
+  border-color: rgba(34, 197, 94, 0.3);
+}
+.sec-type-7 .feature-icon {
+  font-size: 1.2rem;
+  color: #ec4899;
+}
+.sec-type-7 .feature-icon.blue {
+  color: #3b82f6;
+}
+.sec-type-7 .feature-icon.green {
+  color: #22c55e;
+}
+.sec-type-7 .feature-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.accordion-item {
+  border: none !important;
+  background: transparent !important;
+}
+
+.accordion-button {
+  border: none !important;
+  border-bottom: none !important;
+  background: #111 !important;
+  box-shadow: none !important;
+  outline: none !important;
+  color: #fff;
+}
+
+.accordion-button:not(.collapsed) {
+  border: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+.sec-type-7 .accordion-button::after {
+  filter: brightness(0) invert(1);
+  background-color: transparent !important;
+}
+
+.sec-type-7 .accordion-button:not(.collapsed)::after {
+  filter: invert(46%) sepia(84%) saturate(5582%) hue-rotate(199deg) brightness(100%) contrast(98%);
+}
+.sec-type-7 .answer-title {
+  color: #fff;
+  font-size: 18px !important;
+  font-weight: 400;
+  margin-bottom: 0px !important;
+}
+.sec-type-7 .answer-des {
+  color: #dbdbdb;
+  font-size: 18px !important;
+  font-weight: 400;
+}
+.sec-type-7 .answer-title-wrap {
+  padding-bottom: 10px;
+}
+.sec-type-7 .answer-link {
+  color: #3e80af !important;
+  font-size: 18px;
+  font-weight: 400;
+
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+.sec-type-7 .card-row {
+  margin-top: 20px;
+}
+.sec-type-7 .card-1 {
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid #dd7676;
+  background: rgba(253, 205, 205, 0.61);
+}
+.sec-type-7 .card-2 {
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid #9daded;
+  background: rgba(208, 216, 250, 0.73);
+}
+.sec-type-7 .card-3 {
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid #abffbe;
+  background: rgba(231, 250, 234, 0.65);
+}
+.sec-type-7 .card-title {
+  color: #000 !important;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+.sec-type-7 .point {
+  color: #181818 !important;
+  font-size: 18px;
+  font-weight: 400;
+}

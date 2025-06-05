@@ -54,4 +54,18 @@
   .sec-type-5 .point {
     margin-left: 8px;
   }
+  .sec-type-7 .title {
+    font-size: 48px;
+  }
+
+  .sec-type-7 .title-wrap {
+    margin-top: 50px;
+  }
+  .navbar-collapse {
+    padding-bottom: 0px;
+  }
+  .request-demo-btn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
