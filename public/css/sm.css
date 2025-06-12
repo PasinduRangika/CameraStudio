@@ -142,4 +142,33 @@
     color: #dbdbdb;
     font-size: 16px !important;
   }
+  .navbar-collapse {
+    padding-bottom: 60px;
+  }
+  .nav-item {
+  }
+
+  .sec-type-8 .tag {
+    font-size: 36px;
+  }
+  .sec-type-8 .tag-img {
+    width: 150px;
+    height: auto;
+  }
+  .submenu-img-wrap {
+    display: none;
+  }
+  .dropdown-menu[data-bs-popper] {
+    left: 0% !important;
+    transform: translateX(-29%) !important;
+    top: 100% !important;
+    margin-top: 100%;
+  }
+  .submenu-3col {
+    width: 100vw;
+    min-width: 370px;
+  }
+  .submenu-inner {
+    padding: 20px;
+  }
 }

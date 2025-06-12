@@ -19,6 +19,11 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- AOS CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <!-- AOS JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
     <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
     <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
 
@@ -48,8 +53,8 @@
 
     <header>
       <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container">
-          <a class="navbar-brand d-flex gap-2 align-items-center" href="#">
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex gap-3 align-items-center" href="#">
             <img src="../wp-content/uploads/Logo_2.png" alt="vlauncher logo" />
             <div>
               <h2 class="product_name">Camera Studio</h2>
@@ -68,18 +73,117 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-2">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="aboutDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  About
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M13.2071 16.2064C13.0196 16.3938 12.7653 16.4992 12.5001 16.4992C12.2349 16.4992 11.9806 16.3938 11.7931 16.2064L6.1361 10.5494C6.04059 10.4571 5.96441 10.3468 5.912 10.2248C5.85959 10.1028 5.832 9.97155 5.83085 9.83877C5.82969 9.70599 5.855 9.57431 5.90528 9.45141C5.95556 9.32852 6.02981 9.21686 6.1237 9.12297C6.2176 9.02908 6.32925 8.95483 6.45214 8.90454C6.57504 8.85426 6.70672 8.82896 6.8395 8.83012C6.97228 8.83127 7.1035 8.85886 7.2255 8.91126C7.34751 8.96367 7.45785 9.03986 7.5501 9.13537L12.5001 14.0854L17.4501 9.13537C17.6387 8.95321 17.8913 8.85241 18.1535 8.85469C18.4157 8.85697 18.6665 8.96214 18.8519 9.14755C19.0373 9.33296 19.1425 9.58377 19.1448 9.84597C19.1471 10.1082 19.0463 10.3608 18.8641 10.5494L13.2071 16.2064Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </a>
+                <div class="dropdown-menu submenu-3col p-0" aria-labelledby="aboutDropdown">
+                  <div class="submenu-inner">
+                    <div class="submenu-img-wrap">
+                      <img src="../wp-content/uploads/submenuimg.png" alt="Submenu visual" class="submenu-img" />
+                    </div>
+
+                    <div class="submenu-list">
+                      <div>
+                        <div class="d-flex align-items-center gap-2 sub-navi-items">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M17.7792 5.43935L17.7781 13.6139L16.2784 13.6139V8.00084L6.68681 17.5924L5.62615 16.5317L15.2177 6.94018L9.60362 6.93912L9.60362 5.43935L17.7792 5.43935Z"
+                              fill="white"
+                            />
+                          </svg>
+                          <a class="submenu-link" href="#howitworks">Key Features</a>
+                        </div>
+                        <div class="d-flex align-items-center gap-2 sub-navi-items">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M17.7792 5.43935L17.7781 13.6139L16.2784 13.6139V8.00084L6.68681 17.5924L5.62615 16.5317L15.2177 6.94018L9.60362 6.93912L9.60362 5.43935L17.7792 5.43935Z"
+                              fill="white"
+                            />
+                          </svg>
+                          <a class="submenu-link" href="#uvc"> Supported UVC Cameras</a>
+                        </div>
+                        <div class="d-flex align-items-center gap-2 sub-navi-items">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M17.7792 5.43935L17.7781 13.6139L16.2784 13.6139V8.00084L6.68681 17.5924L5.62615 16.5317L15.2177 6.94018L9.60362 6.93912L9.60362 5.43935L17.7792 5.43935Z"
+                              fill="white"
+                            />
+                          </svg>
+                          <a class="submenu-link" href="#features">User Comfort</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="submenu-btn-wrap">
+                      <a href="https://play.google.com/store" target="_blank">
+                        <img
+                          src="../wp-content/uploads/googleplay.png"
+                          alt="Get it on Google Play"
+                          class="submenu-btn-img"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                <a class="nav-link" href="#features">FAQ</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about">How It Works</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#features">FAQs</a>
+                <a class="nav-link" style="cursor: not-allowed" href="#features">What's New</a>
               </li>
             </ul>
-            <a href="https://zipzap.codimite.com/sign-up" target="_blank" class="request-demo-btn">Get Started</a>
+            <div class="nav-btn-wrap">
+              <a
+                href="https://zipzap.codimite.com/sign-up"
+                target="_blank"
+                class="request-demo-btn"
+                style="cursor: not-allowed"
+                >Get Started</a
+              >
+            </div>
           </div>
         </div>
       </nav>
@@ -98,9 +202,9 @@
               Control your document camera like never before — live, <br class="d-none d-lg-block" />interactive, and
               hassle-free
             </p>
-            <div class="d-flex justify-content-center button-wrap">
+            <!-- <div class="d-flex justify-content-center button-wrap">
               <a href="" class="button">Get it on Google Play</a>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -684,6 +788,138 @@
       </script>
     </section>
 
+    <section class="sec-type-8" data-aos="fade-up" data-aos-delay="0">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 d-flex justify-content-center">
+            <div class="d-flex gap-5 justify-content-center align-items-center flex-wrap text-center tag-wrap">
+              <h1 class="tag">User <span>Comfort</span></h1>
+              <img src="../wp-content/uploads/sec_2.png" alt="Key Features" class="tag-img" />
+            </div>
+          </div>
+        </div>
+        <div class="row user-cards">
+          <div class="col-12 col-md-6 col-xl-4 user-card-wrap">
+            <div class="user-card" data-aos="fade-up" data-aos-delay="0">
+              <div class="top-img">
+                <img src="../wp-content/uploads/Theme.png" alt="" />
+              </div>
+              <div class="title-wrap">
+                <div class="icon-wrap">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <g clip-path="url(#clip0_238_5749)">
+                      <rect x="0.875" y="0.875" width="14.25" height="14.25" rx="7.125" fill="#211E1E" />
+                      <path
+                        d="M8 2.21094C9.53535 2.21094 11.0078 2.82085 12.0935 3.90651C13.1791 4.99217 13.7891 6.46464 13.7891 8C13.7891 9.53535 13.1791 11.0078 12.0935 12.0935C11.0078 13.1791 9.53535 13.7891 8 13.7891V2.21094ZM8 0.875C6.11033 0.875 4.29806 1.62567 2.96186 2.96186C1.62567 4.29806 0.875 6.11033 0.875 8C0.875 9.88967 1.62567 11.7019 2.96186 13.0381C4.29806 14.3743 6.11033 15.125 8 15.125C9.88967 15.125 11.7019 14.3743 13.0381 13.0381C14.3743 11.7019 15.125 9.88967 15.125 8C15.125 6.11033 14.3743 4.29806 13.0381 2.96186C11.7019 1.62567 9.88967 0.875 8 0.875Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_238_5749">
+                        <rect x="0.875" y="0.875" width="14.25" height="14.25" rx="7.125" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <h2 class="card-title">Smart Theme Switching</h2>
+              </div>
+              <p class="des-wrap">
+                Switch between light and dark themes anytime, or let the app follow your system settings automatically.
+                It’s all about comfort and looking great in any environment
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4 user-card-wrap">
+            <div class="user-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="top-img">
+                <img src="../wp-content/uploads/Theme.png" alt="" />
+              </div>
+              <div class="title-wrap">
+                <div class="icon-wrap">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
+                    <g clip-path="url(#clip0_238_5858)">
+                      <path
+                        d="M4.25 4H11.75M4.25 7H7.25M8 13L5 10H2.75C2.35218 10 1.97064 9.84196 1.68934 9.56066C1.40804 9.27936 1.25 8.89782 1.25 8.5V2.5C1.25 2.10218 1.40804 1.72064 1.68934 1.43934C1.97064 1.15804 2.35218 1 2.75 1H13.25C13.6478 1 14.0294 1.15804 14.3107 1.43934C14.592 1.72064 14.75 2.10218 14.75 2.5V8.5C14.75 8.89782 14.592 9.27936 14.3107 9.56066C14.0294 9.84196 13.6478 10 13.25 10H11L8 13Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_238_5858">
+                        <rect width="15" height="13.5" fill="white" transform="translate(0.5 0.25)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <h2 class="card-title">Send Feedback</h2>
+              </div>
+              <p class="des-wrap">
+                Found a bug? Have an idea? Share your thoughts directly in the app. Your feedback helps us improve and
+                build features that truly matter.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4 user-card-wrap">
+            <div class="user-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="top-img">
+                <img src="../wp-content/uploads/Theme.png" alt="" />
+              </div>
+              <div class="title-wrap">
+                <div class="icon-wrap">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <g clip-path="url(#clip0_238_5749)">
+                      <rect x="0.875" y="0.875" width="14.25" height="14.25" rx="7.125" fill="#211E1E" />
+                      <path
+                        d="M8 2.21094C9.53535 2.21094 11.0078 2.82085 12.0935 3.90651C13.1791 4.99217 13.7891 6.46464 13.7891 8C13.7891 9.53535 13.1791 11.0078 12.0935 12.0935C11.0078 13.1791 9.53535 13.7891 8 13.7891V2.21094ZM8 0.875C6.11033 0.875 4.29806 1.62567 2.96186 2.96186C1.62567 4.29806 0.875 6.11033 0.875 8C0.875 9.88967 1.62567 11.7019 2.96186 13.0381C4.29806 14.3743 6.11033 15.125 8 15.125C9.88967 15.125 11.7019 14.3743 13.0381 13.0381C14.3743 11.7019 15.125 9.88967 15.125 8C15.125 6.11033 14.3743 4.29806 13.0381 2.96186C11.7019 1.62567 9.88967 0.875 8 0.875Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_238_5749">
+                        <rect x="0.875" y="0.875" width="14.25" height="14.25" rx="7.125" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <h2 class="card-title">Onboarding Tour</h2>
+              </div>
+              <p class="des-wrap">
+                A simple walkthrough that guides you through camera setup, live controls, saving content, and using AI
+                tools — perfect for first-time users.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          AOS.init({
+            duration: 800, // animation duration in ms
+            once: true, // whether animation should happen only once - while scrolling down
+          });
+          const section = document.querySelector(".sec-type-8");
+          const cards = document.querySelectorAll(".sec-type-8 .user-card");
+          if (!section) return;
+
+          const observer = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  section.style.animationPlayState = "running";
+                  cards.forEach((card) => (card.style.animationPlayState = "running"));
+                }
+              });
+            },
+            { threshold: 0.3 }
+          );
+
+          observer.observe(section);
+        });
+      </script>
+    </section>
+
     <section class="sec-type-5">
       <div class="container">
         <div class="row">
@@ -732,29 +968,36 @@
         </div>
       </div>
     </section>
-
     <footer>
       <section class="sec-type-6">
         <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-4 col-lg-5">
-              <div class="img-wrap">
-                <img src="../wp-content/uploads/Logo.png" alt="" />
+          <div class="row justify-content-center text-center">
+            <div class="col-12 col-md-4 col-lg-4 mb-4 d-flex justify-content-center">
+              <div class="img-wrap text-start">
+                <img src="../wp-content/uploads/Logo_2.png" alt="" />
                 <p class="footer-logo-text">Camera Studio</p>
                 <p class="footer_sub_name">Optimized For Chrome OS</p>
+                <a href="" class="footer-img-play-wrap" style="cursor: not-allowed"
+                  ><img src="../wp-content/uploads/googleplay.png" alt="Get it on Google Play" class="footer-img-play"
+                /></a>
               </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-3 d-flex flex-column">
-              <h4 class="footer-title">About</h4>
-              <a href="#">How It Works</a>
-              <a href="#">Supported UVC Cameras</a>
-              <a href="#">FAQ</a>
+            <div class="col-12 col-md-4 col-lg-4 mb-4 d-flex justify-content-center">
+              <div class="f-list d-flex flex-column text-start">
+                <h4 class="footer-title mb-3">About</h4>
+                <a href="#keyfeatures" class="p-0 mb-3">Key Features</a>
+                <a href="#cameracompatibility" class="p-0 mb-3">Supported Cameras</a>
+                <a href="#usercomfort" class="p-0 mb-3">User Comfort</a>
+              </div>
             </div>
 
-            <div class="col-6 col-md-4 col-lg-3 d-flex flex-column">
-              <h4 class="footer-title">Explore</h4>
-              <a href="#">Key Features</a>
-              <a href="#">What’s New</a>
+            <div class="col-12 col-md-4 col-lg-4 mb-4 d-flex justify-content-center">
+              <div class="f-list d-flex flex-column text-start">
+                <h4 class="footer-title mb-3">Learn More</h4>
+                <a href="<?= home_url(); ?>/faq" class="p-0 mb-3">FAQ</a>
+                <a href="<?= home_url(); ?>/terms-of-services" class="p-0 mb-3">Terms of Service</a>
+                <a href="<?= home_url(); ?>/privacy-policy" class="p-0 mb-3">Privacy Policy</a>
+              </div>
             </div>
           </div>
           <div class="row justify-content-center">
@@ -767,6 +1010,30 @@
           </div>
         </div>
       </section>
+      <script>
+        // Dropdown (e.g. About): add 'active' on show, remove on hide
+        document.querySelectorAll(".nav-item.dropdown .dropdown-toggle").forEach((dropdownToggle) => {
+          const navItem = dropdownToggle.closest(".nav-item");
+          dropdownToggle.addEventListener("show.bs.dropdown", function () {
+            navItem.classList.add("active");
+          });
+          dropdownToggle.addEventListener("hide.bs.dropdown", function () {
+            navItem.classList.remove("active");
+          });
+        });
+
+        // For other nav-items (non-dropdown): add 'active' on click, remove from all others
+        document.querySelectorAll(".navbar .nav-item:not(.dropdown)").forEach((item) => {
+          item.addEventListener("click", function () {
+            // Remove 'active' from ALL non-dropdown nav-items
+            document.querySelectorAll(".navbar .nav-item:not(.dropdown)").forEach((nav) => {
+              nav.classList.remove("active");
+            });
+            // Add 'active' to this clicked one
+            item.classList.add("active");
+          });
+        });
+      </script>
     </footer>
   </body>
 </html>
