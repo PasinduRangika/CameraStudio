@@ -57,7 +57,6 @@ html {
   margin-top: 30px;
   margin-left: 5%;
   margin-right: 5%;
-  position: relative !important;
 }
 .navbar .navbar-brand img {
   max-width: 54px;
@@ -1053,7 +1052,7 @@ html {
 
 /* sec-type-9 */
 .sec-type-9 {
-  padding: 60px 0px 60px 0px;
+  padding: 160px 0px 60px 0px;
   background: #111;
 }
 .sec-type-9 .hero-section {
