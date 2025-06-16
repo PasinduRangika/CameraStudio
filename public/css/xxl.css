@@ -1254,3 +1254,113 @@ html {
   padding: 7px 14px;
   text-decoration: none;
 }
+.sec-type-10 .getstarted-middle-wrap {
+  margin-top: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.sec-type-10 .middilebtn-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-direction: column;
+}
+.sec-type-10 .middle-text {
+  color: #fff;
+}
+.sec-type-10 .animation-buble-wrap {
+  position: relative;
+  height: 400px;
+}
+.sec-type-10 .bubble {
+  position: absolute;
+}
+.sec-type-10 .bubble_1 {
+  top: 0px;
+  right: 75px;
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(103, 242, 200, 0.26);
+}
+.sec-type-10 .bubble_2 {
+  top: 100px;
+  left: 50px;
+  width: 46px;
+  height: 46px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(143, 97, 217, 0.24);
+}
+.sec-type-10 .bubble_3 {
+  top: 250px;
+  left: 100px;
+  width: 46px;
+  height: 46px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(239, 144, 54, 0.24);
+}
+.sec-type-10 .bubble_4 {
+  top: 280px;
+  right: 50px;
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(62, 85, 155, 0.29);
+}
+.sec-type-10 .bubble_5 {
+  top: 0px;
+  right: 75px;
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+.sec-type-10 .bubble_6 {
+  top: 100px;
+  left: 50px;
+  width: 46px;
+  height: 46px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(116, 245, 120, 0.2);
+}
+.sec-type-10 .bubble_7 {
+  top: 250px;
+  left: 100px;
+  width: 46px;
+  height: 46px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(190, 101, 105, 0.39);
+}
+.sec-type-10 .bubble_8 {
+  top: 280px;
+  right: 50px;
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
