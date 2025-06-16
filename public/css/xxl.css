@@ -1364,3 +1364,22 @@ html {
   align-items: center;
   background-color: transparent;
 }
+.sec-type-10 .slider_3-bottom-card {
+  border-radius: 10px;
+  background: #1e1e1e;
+  display: flex;
+  justify-content: start;
+  padding: 30px;
+  gap: 12px;
+  height: 126px;
+  margin-bottom: 30px;
+}
+.sec-type-10 .slider_3-bottom-card-des {
+  color: #dbdbdb;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+.sec-type-10 .slider_3-bottom-card svg {
+  margin-top: 6px;
+}
