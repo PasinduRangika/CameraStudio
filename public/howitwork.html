@@ -50,6 +50,13 @@
   <body>
     <!-- <div class="bg-color-shape-1"></div>
     <div class="bg-color-shape-2"></div> -->
+    <!-- Modal Structure -->
+    <div id="featureModal" class="feature-modal">
+      <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <iframe id="featureIframe" src="" frameborder="0" width="960" height="569" allowfullscreen></iframe>
+      </div>
+    </div>
 
     <header>
       <nav class="navbar navbar-expand-lg navbar-light fixed-top">
@@ -224,8 +231,8 @@
         <div class="row">
           <div class="slider-wrap">
             <div class="slider_1 slider active">
-              <div class="row">
-                <div class="col-7">
+              <div class="row align-items-center">
+                <div class="col-12 col-lg-6">
                   <div class="content-wrap">
                     <div class="title-warp">
                       <div class="icon-wrap">
@@ -360,7 +367,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-5"></div>
+                <div class="col-12 col-lg-6">
+                  <img src="../wp-content/uploads/slider_img_cm.png" alt="" class="slider_1_img" />
+                </div>
               </div>
             </div>
             <div class="slider_2 slider">
@@ -386,7 +395,7 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                   <div class="feature-guide-card">
                     <img src="../wp-content/uploads/thumcomarastdio.png" alt="" class="tumbs" />
                     <div class="bottom-line">
@@ -407,7 +416,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                   <div class="feature-guide-card">
                     <img src="../wp-content/uploads/thumcomarastdio.png" alt="" class="tumbs" />
                     <div class="bottom-line">
@@ -428,7 +437,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                   <div class="feature-guide-card">
                     <img src="../wp-content/uploads/thumcomarastdio.png" alt="" class="tumbs" />
                     <div class="bottom-line">
@@ -449,7 +458,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                   <div class="feature-guide-card">
                     <img src="../wp-content/uploads/thumcomarastdio.png" alt="" class="tumbs" />
                     <div class="bottom-line">
@@ -513,6 +522,44 @@
                   </a>
                 </div>
               </div>
+              <script>
+                const modal = document.getElementById("featureModal");
+                const iframe = document.getElementById("featureIframe");
+                const closeBtn = document.querySelector(".modal-close");
+
+                const slides = {
+                  "Feature Guide 01":
+                    "https://docs.google.com/presentation/d/e/2PACX-1vSMlPs33sMf6r1CETbZdXpKvgGweIMmba1p0gtGtdW54QZSQals5ZeEP1qhrCdSn7KXOXG8f33dMiIb/pubembed?start=false&loop=false&delayms=3000",
+                  "Feature Guide 02":
+                    "https://docs.google.com/presentation/d/e/2PACX-1vQZaAvXQx2L4NVwqk4Kezk9PWDe5DZPis2NvY2YsdZIZybrl2XvtQKFlD6FlH-mdzuks4onKUfrPtX4/pubembed?start=false&loop=false&delayms=3000",
+                  "Feature Guide 03":
+                    "https://docs.google.com/presentation/d/e/2PACX-1vTLTTJDdQA2BrLaZwSVjrq7deI-UZBr5AzFlHESuQrZtisVQ_iXy7ELIOuFD-fyv1nHxBlg953R_bxI/pubembed?start=false&loop=false&delayms=3000",
+                  "Feature Guide 04":
+                    "https://docs.google.com/presentation/d/e/2PACX-1vQ7RqOw6CKUWzRmJplITZl72-V23F9mT7DOWoPFYLHRUP6ruxja-ylh2kAYOtbc32TgP6BiRNa9irLG/pubembed?start=false&loop=false&delayms=3000",
+                };
+
+                document.querySelectorAll(".expand").forEach((btn) => {
+                  btn.addEventListener("click", function () {
+                    const title = this.closest(".feature-guide-card")
+                      .querySelector(".feature-card-title")
+                      .textContent.trim();
+                    iframe.src = slides[title];
+                    modal.style.display = "block";
+                  });
+                });
+
+                closeBtn.onclick = () => {
+                  modal.style.display = "none";
+                  iframe.src = "";
+                };
+
+                window.onclick = (e) => {
+                  if (e.target == modal) {
+                    modal.style.display = "none";
+                    iframe.src = "";
+                  }
+                };
+              </script>
             </div>
             <div class="slider_3 slider">
               <div class="row">

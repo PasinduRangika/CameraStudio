@@ -171,4 +171,43 @@
   .submenu-inner {
     padding: 20px;
   }
+  .sec-type-9 .title {
+    font-size: 36px;
+    line-height: 130%;
+  }
+  .sec-type-9 .des {
+    font-size: 16px;
+  }
+  .sec-type-10 .nav-btn {
+    font-size: 15px !important;
+    padding: 7px;
+  }
+  .sec-type-9 .bg-color-shape-1-1 {
+    display: none;
+  }
+  .sec-type-9 .bg-color-shape-2-2 {
+    display: none;
+  }
+  .sec-type-9 .hero-section {
+    padding: 60px 10px;
+  }
+  .sec-type-10 .slider-title {
+    font-size: 28px;
+  }
+  .sec-type-10 .slider-des {
+    font-size: 16px;
+  }
+  .sec-type-10 .point {
+    font-size: 18px;
+  }
+  .sec-type-10 .slider {
+    padding: 20px;
+  }
+  .sec-type-10 .pdf-text {
+    font-size: 16px;
+  }
+  .modal-content {
+    width: 90%;
+    max-width: 960px;
+  }
 }
