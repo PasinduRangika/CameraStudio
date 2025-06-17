@@ -331,6 +331,13 @@ html {
   width: 208px;
   height: auto;
 }
+
+.sec-type-3 .slide-container {
+  border-radius: 20px;
+  background: #181818;
+  padding: 20px;
+}
+
 .sec-type-3 .icon-wrap {
   border-radius: 100px;
   background: #8295f6;
@@ -392,7 +399,6 @@ html {
 }
 .sec-type-3 .slide-image {
   flex: 1;
-  background: #7b87ff;
   padding: 20px;
   border-radius: 16px;
   display: flex;
@@ -405,12 +411,15 @@ html {
   border-radius: 10px;
 }
 
-.sec-type-3 .swiper-pagination {
-}
-
 .sec-type-3 .swiper-pagination-bullet {
   background: #888;
   opacity: 1;
+}
+
+.sec-type-3 .swiper-pagination {
+  bottom: 13% !important;
+  left: 25% !important;
+  width: fit-content !important;
 }
 
 .sec-type-3 .swiper-pagination-bullet-active {
@@ -418,6 +427,33 @@ html {
   background: #1a73e8;
   height: 10px;
   width: 33px;
+}
+
+.sec-type-3 .feature-prev,
+.sec-type-3 .feature-next {
+  color: #fff;
+  background: transparent;
+  border-radius: 50%;
+  padding: 0px;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.sec-type-3 .feature-prev {
+  left: 50px;
+}
+
+.sec-type-3 .feature-next {
+  right: 50px;
+}
+
+.sec-type-3 .feature-prev::after,
+.sec-type-3 .feature-next::after {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 /* sec-type-4 */
@@ -1178,9 +1214,12 @@ html {
 }
 .sec-type-10 .point-wrap {
   display: flex;
-  align-items: center;
+  align-items: start;
   gap: 12px;
   margin-bottom: 25px;
+}
+.sec-type-10 .point-wrap svg {
+  margin-top: 2px;
 }
 .sec-type-10 .point {
   color: #dbdbdb;

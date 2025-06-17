@@ -80,4 +80,19 @@
     top: 100% !important;
     margin-top: 17%;
   }
+
+  .sec-type-3 .feature-prev {
+    left: 10px;
+    top: 100%;
+  }
+
+  .sec-type-3 .feature-next {
+    right: 10px;
+    top: 100%;
+  }
+  .sec-type-3 .swiper-pagination {
+    bottom: 0px !important;
+    left: 0px !important;
+    width: 100% !important;
+  }
 }

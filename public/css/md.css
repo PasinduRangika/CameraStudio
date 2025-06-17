@@ -124,4 +124,17 @@
   .slider_3-bottom-card {
     margin-top: 30px;
   }
+  .sec-type-3 .feature-prev {
+    left: 85%;
+    top: 5%;
+  }
+
+  .sec-type-3 .feature-next {
+    right: 10px;
+    top: 5%;
+  }
+  .sec-type-3 .swiper {
+    width: 100%;
+    height: 90vh;
+  }
 }
