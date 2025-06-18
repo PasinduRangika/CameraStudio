@@ -18,7 +18,7 @@
     padding-top: 40px;
   }
   .sec-type-1 {
-    padding: 180px 0px 100px 0px;
+    padding: 120px 0px 60px 0px;
   }
   .sec-type-3 .tag-wrap {
     flex-direction: column;
@@ -82,7 +82,7 @@
   }
   .sec-type-3 .swiper {
     width: 100%;
-    height: 100vh !important;
+    height: 90vh !important;
   }
   .sec-type-3 .slider-des {
     font-size: 16px;
@@ -154,8 +154,6 @@
   .navbar-collapse {
     padding-bottom: 60px;
   }
-  .nav-item {
-  }
 
   .sec-type-8 .tag {
     font-size: 36px;
@@ -188,7 +186,7 @@
     font-size: 16px;
   }
   .sec-type-10 .nav-btn {
-    font-size: 15px !important;
+    font-size: 12px !important;
     padding: 7px;
   }
   .sec-type-9 .bg-color-shape-1-1 {
@@ -227,5 +225,25 @@
   }
   .navbar {
     margin-top: 0px;
+  }
+  .sec-type-3 .slider-subtitle {
+    padding: 10px 0;
+  }
+  .sec-type-10 .btn-wrap {
+    width: 100%;
+    justify-content: center;
+  }
+  .sec-type-10 .icon-wrap {
+    display: none;
+  }
+  .sec-type-10 .slider_3-bottom-card {
+    height: fit-content !important;
+  }
+  .sec-type-10 .slider_3-bottom-card svg {
+    display: none;
+  }
+  .sec-type-4 .lastcard-title {
+    font-size: 16px;
+    width: 290px;
   }
 }
