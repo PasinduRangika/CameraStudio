@@ -95,4 +95,15 @@
     left: 0px !important;
     width: 100% !important;
   }
+  .launching_soon--text {
+    color: #fff;
+    text-align: center;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+  }
+  .launching_soon {
+    margin-top: 60px;
+  }
 }

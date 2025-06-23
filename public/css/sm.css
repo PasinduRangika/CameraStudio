@@ -246,4 +246,17 @@
     font-size: 16px;
     width: 290px;
   }
+
+  .launching_soon--text {
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+  }
+  .launching_soon {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
 }
