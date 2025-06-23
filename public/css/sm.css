@@ -259,4 +259,31 @@
     margin-top: 20px;
     margin-bottom: 30px;
   }
+  .sec-type-3 .card-sub-title {
+    text-align: center;
+    font-size: 16px;
+  }
+  .sec-type-3 .card-des {
+    text-align: center;
+    font-size: 14px;
+  }
+  .sec-type-3 .card-title {
+    font-size: 24px;
+  }
+  .sec-type-3 .title {
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+  .sec-type-3 .units {
+    margin-bottom: 60px;
+  }
+  .sec-type-3 .card-sub-title {
+    padding-bottom: 20px;
+  }
+  .sec-type-11 .tag {
+    font-size: 36px;
+  }
+  .sec-type-11 {
+    padding: 0px 0px 40px 0px;
+  }
 }

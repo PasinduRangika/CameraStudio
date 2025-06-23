@@ -145,4 +145,10 @@
     font-weight: 700;
     line-height: 120%;
   }
+  .sec-type-3 .content_2 {
+    padding-left: 0px;
+  }
+  .sec-type-3 .content_1 {
+    padding-right: 0px;
+  }
 }
