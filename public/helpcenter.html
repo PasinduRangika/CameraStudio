@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <!-- AOS JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+
+    <link href="https://vjs.zencdn.net/8.16.1/video-js.css" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- GSAP + ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="./css/xxl.css" />
+    <link rel="stylesheet" href="./css/xl.css" />
+    <link rel="stylesheet" href="./css/lg.css" />
+    <link rel="stylesheet" href="./css/md.css" />
+    <link rel="stylesheet" href="./css/sm.css" />
+    <link rel="stylesheet" href="./css/xs.css" />
+  </head>
+
+  <body>
+    <!-- <div class="bg-color-shape-1"></div>
+    <div class="bg-color-shape-2"></div> -->
+    <!-- Modal Structure -->
+    <div id="featureModal" class="feature-modal">
+      <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <iframe id="featureIframe" src="" frameborder="0" width="960" height="569" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex gap-3 align-items-center" href="#">
+            <img src="../wp-content/uploads/Logo_2.png" alt="vlauncher logo" />
+            <div>
+              <h2 class="product_name">Camera Studio</h2>
+              <p class="product_sub_name">Optimized For Chrome OS</p>
+            </div>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="aboutDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  About
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M13.2071 16.2064C13.0196 16.3938 12.7653 16.4992 12.5001 16.4992C12.2349 16.4992 11.9806 16.3938 11.7931 16.2064L6.1361 10.5494C6.04059 10.4571 5.96441 10.3468 5.912 10.2248C5.85959 10.1028 5.832 9.97155 5.83085 9.83877C5.82969 9.70599 5.855 9.57431 5.90528 9.45141C5.95556 9.32852 6.02981 9.21686 6.1237 9.12297C6.2176 9.02908 6.32925 8.95483 6.45214 8.90454C6.57504 8.85426 6.70672 8.82896 6.8395 8.83012C6.97228 8.83127 7.1035 8.85886 7.2255 8.91126C7.34751 8.96367 7.45785 9.03986 7.5501 9.13537L12.5001 14.0854L17.4501 9.13537C17.6387 8.95321 17.8913 8.85241 18.1535 8.85469C18.4157 8.85697 18.6665 8.96214 18.8519 9.14755C19.0373 9.33296 19.1425 9.58377 19.1448 9.84597C19.1471 10.1082 19.0463 10.3608 18.8641 10.5494L13.2071 16.2064Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </a>
+                <div class="dropdown-menu submenu-3col p-0" aria-labelledby="aboutDropdown">
+                  <div class="submenu-inner">
+                    <div class="submenu-img-wrap">
+                      <img src="../wp-content/uploads/submenuimg.png" alt="Submenu visual" class="submenu-img" />
+                    </div>
+
+                    <div class="submenu-list">
+                      <div>
+                        <div class="d-flex align-items-center gap-2 sub-navi-items">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M17.7792 5.43935L17.7781 13.6139L16.2784 13.6139V8.00084L6.68681 17.5924L5.62615 16.5317L15.2177 6.94018L9.60362 6.93912L9.60362 5.43935L17.7792 5.43935Z"
+                              fill="white"
+                            />
+                          </svg>
+                          <a class="submenu-link" href="#howitworks">Key Features</a>
+                        </div>
+                        <div class="d-flex align-items-center gap-2 sub-navi-items">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M17.7792 5.43935L17.7781 13.6139L16.2784 13.6139V8.00084L6.68681 17.5924L5.62615 16.5317L15.2177 6.94018L9.60362 6.93912L9.60362 5.43935L17.7792 5.43935Z"
+                              fill="white"
+                            />
+                          </svg>
+                          <a class="submenu-link" href="#uvc"> Supported UVC Cameras</a>
+                        </div>
+                        <div class="d-flex align-items-center gap-2 sub-navi-items">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M17.7792 5.43935L17.7781 13.6139L16.2784 13.6139V8.00084L6.68681 17.5924L5.62615 16.5317L15.2177 6.94018L9.60362 6.93912L9.60362 5.43935L17.7792 5.43935Z"
+                              fill="white"
+                            />
+                          </svg>
+                          <a class="submenu-link" href="#features">User Comfort</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="submenu-btn-wrap">
+                      <a href="https://play.google.com/store" target="_blank">
+                        <img
+                          src="../wp-content/uploads/googleplay.png"
+                          alt="Get it on Google Play"
+                          class="submenu-btn-img"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#features">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="cursor: not-allowed" href="#features">What's New</a>
+              </li>
+            </ul>
+            <div class="nav-btn-wrap">
+              <a
+                href="https://zipzap.codimite.com/sign-up"
+                target="_blank"
+                class="request-demo-btn"
+                style="cursor: not-allowed"
+                >Get Started</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="sec-type-9">
+      <div class="bg-color-shape-1-1"></div>
+      <div class="bg-color-shape-2-2"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 hero-section">
+            <div class="content-wrap">
+              <h1 class="title">
+                Camera Studio
+                <br class="d-none d-lg-block" />
+                Help Center
+                <img src="../wp-content/uploads/sec_1.png" alt="Icon" style="height: 1em; vertical-align: middle" />
+              </h1>
+              <p class="des">
+                Troubleshooting, advanced guides, and support to keep your<br class="d-none d-lg-block" />
+                sessions smooth
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec-type-12">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="title-wrap">
+              <div class="svg_1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
+                  <path
+                    d="M13.4707 4.5H10.5C9.70435 4.5 8.94129 4.81607 8.37868 5.37868C7.81607 5.94129 7.5 6.70435 7.5 7.5V25.5C7.5 26.2957 7.81607 27.0587 8.37868 27.6213C8.94129 28.1839 9.70435 28.5 10.5 28.5H22.5C23.2957 28.5 24.0587 28.1839 24.6213 27.6213C25.1839 27.0587 25.5 26.2957 25.5 25.5V16.5M13.4707 4.5C15.128 4.5 16.5 5.84267 16.5 7.5V10.5C16.5 11.2956 16.8161 12.0587 17.3787 12.6213C17.9413 13.1839 18.7044 13.5 19.5 13.5H22.5C23.2957 13.5 24.0587 13.8161 24.6213 14.3787C25.1839 14.9413 25.5 15.7044 25.5 16.5M13.4707 4.5C18.3907 4.5 25.5 11.6467 25.5 16.5"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="title">
+                <h2 class="title_main">How to Use Camera Studio</h2>
+                <p class="title_sub">
+                  Learn how to connect your camera, explore features, and streamline your workflow
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row quick-guide-container align-items-center">
+          <div class="col-6">
+            <div class="img-wrap">
+              <img src="../wp-content/uploads/userguide.webp" alt="camera studio user guide" class="t-img" />
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="content-wrap">
+              <h2 class="quick-guide-title">
+                Step-by-step instructions to help you set up and start using Camera Studio in minutes
+              </h2>
+              <div class="row">
+                <div class="col-6">
+                  <div class="quick-guide-point-wrap d-flex align-items-center">
+                    <div class="svg-wrap">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                          d="M5.18408 11.2175L7.63408 12.2545C7.94408 11.6338 8.28175 11.0331 8.64708 10.4525C9.01242 9.87179 9.41575 9.30712 9.85708 8.75845L8.32208 8.46445C8.21941 8.43845 8.12008 8.44145 8.02408 8.47345C7.92808 8.50545 7.84142 8.55979 7.76408 8.63645L5.18408 11.2175ZM8.42608 12.8885L11.2561 15.7145C12.0461 15.3578 12.8411 14.9045 13.6411 14.3545C14.4411 13.8045 15.2104 13.1601 15.9491 12.4215C17.0257 11.3448 17.8484 10.1965 18.4171 8.97645C18.9857 7.75645 19.3054 6.34779 19.3761 4.75045C17.7787 4.82112 16.3721 5.14079 15.1561 5.70945C13.9414 6.27812 12.7954 7.10079 11.7181 8.17745C10.9801 8.91612 10.3361 9.68845 9.78608 10.4945C9.23608 11.3005 8.78275 12.0985 8.42608 12.8885ZM13.6061 10.5135C13.3127 10.2201 13.1661 9.86812 13.1661 9.45745C13.1661 9.04679 13.3127 8.69445 13.6061 8.40045C13.8994 8.10645 14.2561 7.95979 14.6761 7.96045C15.0961 7.96112 15.4524 8.10779 15.7451 8.40045C16.0377 8.69312 16.1844 9.04545 16.1851 9.45745C16.1857 9.86945 16.0391 10.2215 15.7451 10.5135C15.4517 10.8068 15.0951 10.9535 14.6751 10.9535C14.2551 10.9535 13.8991 10.8068 13.6071 10.5135M12.9081 18.9625L15.4891 16.3815C15.5657 16.3041 15.6204 16.2175 15.6531 16.1215C15.6851 16.0255 15.6884 15.9261 15.6631 15.8235L15.3681 14.2885C14.8194 14.7298 14.2547 15.1321 13.6741 15.4955C13.0934 15.8588 12.4927 16.1955 11.8721 16.5055L12.9081 18.9625ZM20.3101 3.82945C20.4221 5.66679 20.1621 7.35679 19.5301 8.89945C18.8987 10.4428 17.9154 11.8821 16.5801 13.2175L16.4061 13.3905L16.2331 13.5635L16.6371 15.6155C16.6911 15.8848 16.6811 16.1458 16.6071 16.3985C16.5324 16.6511 16.3977 16.8748 16.2031 17.0695L12.5611 20.6925L10.9031 16.7875L7.33908 13.2235L3.43408 11.5465L7.05108 7.92345C7.24575 7.72879 7.47042 7.59112 7.72508 7.51045C7.97975 7.42979 8.24175 7.41645 8.51108 7.47045L10.6011 7.89245C10.6651 7.82845 10.7194 7.77079 10.7641 7.71945C10.8087 7.66812 10.8634 7.61045 10.9281 7.54645C12.2641 6.21045 13.7024 5.22912 15.2431 4.60245C16.7837 3.97579 18.4721 3.71812 20.3101 3.82945ZM5.11208 16.1675C5.50342 15.7768 5.97875 15.5835 6.53808 15.5875C7.09742 15.5915 7.57275 15.7895 7.96408 16.1815C8.35542 16.5735 8.55008 17.0488 8.54808 17.6075C8.54608 18.1675 8.34942 18.6428 7.95808 19.0335C7.61808 19.3735 7.07308 19.6645 6.32308 19.9065C5.57308 20.1485 4.70475 20.3158 3.71808 20.4085C3.81075 19.4218 3.98142 18.5535 4.23008 17.8035C4.47875 17.0535 4.77275 16.5081 5.11208 16.1675ZM5.82608 16.8945C5.63342 17.0871 5.45375 17.4011 5.28708 17.8365C5.12042 18.2718 5.01042 18.7208 4.95708 19.1835C5.41975 19.1295 5.86875 19.0168 6.30408 18.8455C6.73875 18.6748 7.05242 18.4931 7.24508 18.3005C7.44508 18.1005 7.54708 17.8621 7.55108 17.5855C7.55442 17.3081 7.45608 17.0695 7.25608 16.8695C7.05608 16.6695 6.81775 16.5738 6.54108 16.5825C6.26442 16.5905 6.02608 16.6945 5.82608 16.8945Z"
+                          fill="black"
+                        />
+                      </svg>
+                    </div>
+                    <h4 class="quick-guide-points">Get Started</h4>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="quick-guide-point-wrap d-flex align-items-center">
+                    <div class="svg-wrap">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                        <g clip-path="url(#clip0_759_5564)">
+                          <path
+                            d="M4.4999 4.98202H13.4999M4.4999 8.58202H8.0999M8.9999 15.782L5.3999 12.182H2.6999C2.22251 12.182 1.76468 11.9924 1.42711 11.6548C1.08954 11.3172 0.899902 10.8594 0.899902 10.382V3.18202C0.899902 2.70463 1.08954 2.24679 1.42711 1.90923C1.76468 1.57166 2.22251 1.38202 2.6999 1.38202H15.2999C15.7773 1.38202 16.2351 1.57166 16.5727 1.90923C16.9103 2.24679 17.0999 2.70463 17.0999 3.18202V10.382C17.0999 10.8594 16.9103 11.3172 16.5727 11.6548C16.2351 11.9924 15.7773 12.182 15.2999 12.182H12.5999L8.9999 15.782Z"
+                            stroke="#060606"
+                            stroke-width="1.2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_759_5564">
+                            <rect width="18" height="16.2" fill="white" transform="translate(0 0.480469)" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </div>
+                    <h4 class="quick-guide-points">Themes & Feedback</h4>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="quick-guide-point-wrap d-flex align-items-center">
+                    <div class="svg-wrap">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                        <path
+                          d="M11.875 7.91667L15.4795 6.11483C15.6001 6.05454 15.7342 6.02607 15.869 6.03214C16.0037 6.03821 16.1347 6.07861 16.2494 6.14951C16.3642 6.22041 16.4589 6.31946 16.5247 6.43726C16.5904 6.55505 16.6249 6.68769 16.625 6.82258V12.1774C16.6249 12.3123 16.5904 12.4449 16.5247 12.5627C16.4589 12.6805 16.3642 12.7796 16.2494 12.8505C16.1347 12.9214 16.0037 12.9618 15.869 12.9679C15.7342 12.9739 15.6001 12.9455 15.4795 12.8852L11.875 11.0833V7.91667ZM3.95833 14.25H10.2917C10.7116 14.25 11.1143 14.0832 11.4113 13.7863C11.7082 13.4893 11.875 13.0866 11.875 12.6667V6.33333C11.875 5.91341 11.7082 5.51068 11.4113 5.21375C11.1143 4.91681 10.7116 4.75 10.2917 4.75H3.95833C3.53841 4.75 3.13568 4.91681 2.83875 5.21375C2.54181 5.51068 2.375 5.91341 2.375 6.33333V12.6667C2.375 13.0866 2.54181 13.4893 2.83875 13.7863C3.13568 14.0832 3.53841 14.25 3.95833 14.25Z"
+                          stroke="black"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    <h4 class="quick-guide-points">Product Features</h4>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="quick-guide-point-wrap d-flex align-items-center">
+                    <div class="svg-wrap">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <g clip-path="url(#clip0_759_5572)">
+                          <path
+                            d="M10 4.0625C10.8198 4.0625 11.4844 3.39792 11.4844 2.57812C11.4844 1.75833 10.8198 1.09375 10 1.09375C9.1802 1.09375 8.51562 1.75833 8.51562 2.57812C8.51562 3.39792 9.1802 4.0625 10 4.0625Z"
+                            stroke="black"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M8.08061 10.6824C8.18822 10.0122 8.23647 9.36424 8.06205 8.91633C7.91361 8.53113 7.59076 8.31552 7.20111 8.16857L3.76738 7.05752C3.32207 6.90908 2.90607 6.66045 2.87676 6.16912C2.83965 5.53826 3.39629 5.13006 3.95293 5.27849C3.95293 5.27849 7.21856 6.43408 10.0018 6.43408C12.785 6.43408 16.0135 5.28369 16.0135 5.28369C16.6814 5.09814 17.1268 5.61767 17.1268 6.16652C17.1268 6.69385 16.7186 6.87939 16.2361 7.05492L12.9705 8.23908C12.6736 8.35041 12.1912 8.57306 12.0057 8.91373C11.783 9.31265 11.8201 10.0096 11.9277 10.6798L12.1467 11.7793L13.5349 17.8615C13.6388 18.3495 13.3012 18.8056 12.815 18.891C12.3289 18.9763 11.9314 18.6445 11.7875 18.1725L10.3936 13.8704C10.3266 13.6641 10.2672 13.4554 10.2155 13.2444L10.0018 12.3731L9.80508 13.1765C9.74273 13.4325 9.67099 13.6859 9.58984 13.9365L8.22051 18.1688C8.07207 18.6457 7.68242 18.9759 7.19629 18.891C6.71016 18.806 6.36504 18.3124 6.47414 17.8615L7.86166 11.7819L8.08061 10.6824Z"
+                            stroke="black"
+                            stroke-linejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_759_5572">
+                            <rect width="19" height="19" fill="white" transform="translate(0.5 0.5)" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </div>
+                    <h4 class="quick-guide-points">Accessibility</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <a href="" class="view-guide-btn">
+                  View Guide
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="19"
+                    height="20"
+                    viewBox="0 0 19 20"
+                    fill="none"
+                    class="view-guid-svg"
+                  >
+                    <g clip-path="url(#clip0_759_5554)">
+                      <path
+                        d="M4.28792 17.5959L14.6392 6.87684M14.6392 6.87684L15.045 15.037M14.6392 6.87684L6.46983 6.75598"
+                        stroke="white"
+                        stroke-width="1.49012"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_759_5554">
+                        <rect width="18.9264" height="19" fill="white" transform="translate(0 0.5)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec-type-13">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="title-wrap">
+              <div class="svg-wrap svg_1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
+                  <path
+                    d="M13.4707 4.5H10.5C9.70435 4.5 8.94129 4.81607 8.37868 5.37868C7.81607 5.94129 7.5 6.70435 7.5 7.5V25.5C7.5 26.2957 7.81607 27.0587 8.37868 27.6213C8.94129 28.1839 9.70435 28.5 10.5 28.5H22.5C23.2957 28.5 24.0587 28.1839 24.6213 27.6213C25.1839 27.0587 25.5 26.2957 25.5 25.5V16.5M13.4707 4.5C15.128 4.5 16.5 5.84267 16.5 7.5V10.5C16.5 11.2956 16.8161 12.0587 17.3787 12.6213C17.9413 13.1839 18.7044 13.5 19.5 13.5H22.5C23.2957 13.5 24.0587 13.8161 24.6213 14.3787C25.1839 14.9413 25.5 15.7044 25.5 16.5M13.4707 4.5C18.3907 4.5 25.5 11.6467 25.5 16.5"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="title">
+                <h2 class="title_main">Troubleshooting Camera Issues</h2>
+                <p class="title_sub">
+                  Not seeing your camera in Camera Studio? Here are quick fixes for the most common problems
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6"></div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <section class="sec-type-6">
+        <div class="container">
+          <div class="row justify-content-center text-center">
+            <div class="col-12 col-md-4 col-lg-4 mb-4 d-flex justify-content-center">
+              <div class="img-wrap text-start">
+                <img src="../wp-content/uploads/Logo_2.png" alt="" />
+                <p class="footer-logo-text">Camera Studio</p>
+                <p class="footer_sub_name">Optimized For Chrome OS</p>
+                <a href="" class="footer-img-play-wrap" style="cursor: not-allowed"
+                  ><img src="../wp-content/uploads/googleplay.png" alt="Get it on Google Play" class="footer-img-play"
+                /></a>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4 mb-4 d-flex justify-content-center">
+              <div class="f-list d-flex flex-column text-start">
+                <h4 class="footer-title mb-3">About</h4>
+                <a href="#keyfeatures" class="p-0 mb-3">Key Features</a>
+                <a href="#cameracompatibility" class="p-0 mb-3">Supported Cameras</a>
+                <a href="#usercomfort" class="p-0 mb-3">User Comfort</a>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-4 mb-4 d-flex justify-content-center">
+              <div class="f-list d-flex flex-column text-start">
+                <h4 class="footer-title mb-3">Learn More</h4>
+                <a href="<?= home_url(); ?>/faq" class="p-0 mb-3">FAQ</a>
+                <a href="<?= home_url(); ?>/terms-of-services" class="p-0 mb-3">Terms of Service</a>
+                <a href="<?= home_url(); ?>/privacy-policy" class="p-0 mb-3">Privacy Policy</a>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-10 d-flex jusfity-content-center">
+              <div class="divider"></div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <p class="footer-text">© 2025 Camera Studio | All Rights Reserved</p>
+          </div>
+        </div>
+      </section>
+      <script>
+        // Dropdown (e.g. About): add 'active' on show, remove on hide
+        document.querySelectorAll(".nav-item.dropdown .dropdown-toggle").forEach((dropdownToggle) => {
+          const navItem = dropdownToggle.closest(".nav-item");
+          dropdownToggle.addEventListener("show.bs.dropdown", function () {
+            navItem.classList.add("active");
+          });
+          dropdownToggle.addEventListener("hide.bs.dropdown", function () {
+            navItem.classList.remove("active");
+          });
+        });
+
+        // For other nav-items (non-dropdown): add 'active' on click, remove from all others
+        document.querySelectorAll(".navbar .nav-item:not(.dropdown)").forEach((item) => {
+          item.addEventListener("click", function () {
+            // Remove 'active' from ALL non-dropdown nav-items
+            document.querySelectorAll(".navbar .nav-item:not(.dropdown)").forEach((nav) => {
+              nav.classList.remove("active");
+            });
+            // Add 'active' to this clicked one
+            item.classList.add("active");
+          });
+        });
+      </script>
+    </footer>
+  </body>
+</html>

@@ -236,14 +236,14 @@
         <div class="row">
           <div class="col-12">
             <h1 class="title">
-              Effortless Camera Control. <br class="d-none d-lg-block" />
-              Right in Your
+              Control Any Document <br class="d-none d-lg-block" />
+              Camera,
               <img src="../wp-content/uploads/sec_1.png" alt="Icon" style="height: 1em; vertical-align: middle" />
-              Browser
+              Anywhere
             </h1>
             <p class="des">
-              Control your document camera like never before — live, <br class="d-none d-lg-block" />interactive, and
-              hassle-free
+              Present, annotate, and share your content. No matter the make <br class="d-none d-lg-block" />interactive,
+              and or model of your camera
             </p>
             <!-- <div class="d-flex justify-content-center button-wrap">
               <a href="" class="button">Get it on Google Play</a>
@@ -315,7 +315,7 @@
         <div class="row justify-content-center">
           <div class="col-11 d-flex justify-content-center">
             <div class="video-wrap position-relative">
-              <img src="../wp-content/uploads/videoimg.png" alt="" width="100%" />
+              <img src="../wp-content/uploads/camerastudio-scaled.webp" alt="" width="100%" />
               <button id="videoToggleBtn" class="video-toggle-btn">
                 <svg
                   id="playIcon"
@@ -1170,7 +1170,7 @@
             <div class="swiper camera-slider">
               <div class="swiper-wrapper">
                 <div class="swiper-slide camera-card">
-                  <img src="../wp-content/uploads/slide_1 (2)_transparent.png" alt="Logitech Reach" />
+                  <img src="../wp-content/uploads/cam_1.webp" alt="Logitech Reach" />
                   <div class="d-flex justify-content-center gap-3">
                     <div class="logo-wrap">
                       <img src="../wp-content/uploads/subslide_1.png" alt="" class="camera-brand" />
@@ -1183,7 +1183,7 @@
                 </div>
 
                 <div class="swiper-slide camera-card">
-                  <img src="../wp-content/uploads/slide_2.png" alt="Logitech Reach" />
+                  <img src="../wp-content/uploads/cam_2.webp" alt="Logitech Reach" />
                   <div class="d-flex justify-content-center gap-3">
                     <div class="logo-wrap">
                       <img src="../wp-content/uploads/subslide_2.png" alt="" class="camera-brand" />
@@ -1196,7 +1196,7 @@
                 </div>
 
                 <div class="swiper-slide camera-card">
-                  <img src="../wp-content/uploads/slide_3.png" alt="Logitech Reach" />
+                  <img src="../wp-content/uploads/cam_3.webp" alt="Logitech Reach" />
                   <div class="d-flex justify-content-center gap-3">
                     <div class="logo-wrap">
                       <img src="../wp-content/uploads/subslide_3.png" alt="" class="camera-brand" />
@@ -1209,7 +1209,7 @@
                 </div>
 
                 <div class="swiper-slide camera-card">
-                  <img src="../wp-content/uploads/slide_4.png" alt="Logitech Reach" />
+                  <img src="../wp-content/uploads/cam_4.webp" alt="Logitech Reach" />
                   <div class="d-flex justify-content-center gap-3">
                     <div class="logo-wrap">
                       <img src="../wp-content/uploads/subslide_3.png" alt="" class="camera-brand" />
@@ -1221,7 +1221,7 @@
                   </div>
                 </div>
                 <div class="swiper-slide camera-card">
-                  <img src="../wp-content/uploads/slide_4.png" alt="Logitech Reach" />
+                  <img src="../wp-content/uploads/cam_5.webp" alt="Logitech Reach" />
                   <div class="d-flex justify-content-center gap-3">
                     <div class="logo-wrap">
                       <img src="../wp-content/uploads/subslide_3.png" alt="" class="camera-brand" />
@@ -1234,7 +1234,7 @@
                 </div>
 
                 <div class="swiper-slide camera-card" style="position: relative; overflow: hidden">
-                  <img src="../wp-content/uploads/slide_4.png" alt="Logitech Reach" style="visibility: hidden" />
+                  <img src="../wp-content/uploads/cam_5.webp" alt="Logitech Reach" style="visibility: hidden" />
                   <div class="d-flex justify-content-center gap-3" style="visibility: hidden">
                     <div class="logo-wrap">
                       <img src="../wp-content/uploads/subslide_3.png" alt="" class="camera-brand" />
@@ -1274,6 +1274,7 @@
         const swiper = new Swiper(".camera-slider", {
           slidesPerView: 3.5,
           spaceBetween: 15,
+          slidesPerGroup: 3,
           navigation: {
             nextEl: ".sec-type-4 .swiper-button-next",
             prevEl: ".sec-type-4 .swiper-button-prev",
@@ -1442,66 +1443,43 @@
             <div class="accordion" id="faqAccordion">
               <!-- 1 -->
               <div class="accordion-item">
-                <h2 class="accordion-header" id="heading1">
+                <h2 class="accordion-header" id="heading10">
                   <button
                     class="accordion-button collapsed"
                     type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#collapse1"
+                    data-bs-target="#collapse10"
                     aria-expanded="false"
                   >
-                    What is this app, and what does it do?
+                    Who should use this app?
                   </button>
                 </h2>
-                <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div id="collapse10" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                   <div class="accordion-body">
                     <div class="d-flex align-item-center gap-2 answer-title-wrap">
-                      <h2 class="answer-title">It’s a camera control and presentation app.</h2>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M10.0002 1.0415C8.95039 1.0415 7.94358 1.45854 7.20124 2.20087C6.45891 2.9432 6.04188 3.95002 6.04188 4.99984C6.04188 6.04965 6.45891 7.05647 7.20124 7.7988C7.94358 8.54113 8.95039 8.95817 10.0002 8.95817C11.05 8.95817 12.0568 8.54113 12.7992 7.7988C13.5415 7.05647 13.9585 6.04965 13.9585 4.99984C13.9585 3.95002 13.5415 2.9432 12.7992 2.20087C12.0568 1.45854 11.05 1.0415 10.0002 1.0415ZM7.29188 4.99984C7.29188 4.28154 7.57722 3.59267 8.08513 3.08476C8.59304 2.57685 9.28191 2.2915 10.0002 2.2915C10.7185 2.2915 11.4074 2.57685 11.9153 3.08476C12.4232 3.59267 12.7085 4.28154 12.7085 4.99984C12.7085 5.71813 12.4232 6.40701 11.9153 6.91492C11.4074 7.42283 10.7185 7.70817 10.0002 7.70817C9.28191 7.70817 8.59304 7.42283 8.08513 6.91492C7.57722 6.40701 7.29188 5.71813 7.29188 4.99984ZM10.0002 10.2082C8.07271 10.2082 6.29604 10.6465 4.98021 11.3865C3.68354 12.1165 2.70854 13.2215 2.70854 14.5832V14.6682C2.70771 15.6365 2.70688 16.8515 3.77271 17.7198C4.29688 18.1465 5.03104 18.4507 6.02271 18.6507C7.01604 18.8523 8.31188 18.9582 10.0002 18.9582C11.6885 18.9582 12.9835 18.8523 13.9785 18.6507C14.9702 18.4507 15.7035 18.1465 16.2285 17.7198C17.2944 16.8515 17.2927 15.6365 17.2919 14.6682V14.5832C17.2919 13.2215 16.3169 12.1165 15.021 11.3865C13.7044 10.6465 11.9285 10.2082 10.0002 10.2082ZM3.95854 14.5832C3.95854 13.874 4.47688 13.104 5.59271 12.4765C6.68938 11.8598 8.24604 11.4582 10.001 11.4582C11.7544 11.4582 13.311 11.8598 14.4077 12.4765C15.5244 13.104 16.0419 13.874 16.0419 14.5832C16.0419 15.6732 16.0085 16.2865 15.4385 16.7498C15.1302 17.0015 14.6135 17.2473 13.7302 17.4257C12.8494 17.604 11.6452 17.7082 10.0002 17.7082C8.35521 17.7082 7.15021 17.604 6.27021 17.4257C5.38688 17.2473 4.87021 17.0015 4.56188 16.7507C3.99188 16.2865 3.95854 15.6732 3.95854 14.5832Z"
+                          fill="black"
+                        />
+                      </svg>
+
+                      <h2 class="answer-title">Anyone needing a high-quality document camera experience</h2>
                     </div>
+
                     <p class="answer-des">
-                      This is a web-based Progressive Web App (PWA) that runs in the Chrome browser. It lets you view,
-                      control, and manipulate the live feed from a document camera, making it ideal for classrooms,
-                      remote learning, product demos, tutorials, and virtual presentations.
+                      This app is ideal for teachers, presenters, remote workers, and anyone who needs to showcase
+                      documents, books, or objects in detail. It’s perfect for virtual meetings, training sessions,
+                      science demonstrations, art tutorials, and other scenarios where visual clarity and manipulation
+                      of content are key
                     </p>
                   </div>
                 </div>
               </div>
 
               <!-- 2 -->
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="heading2">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapse2"
-                    aria-expanded="false"
-                  >
-                    Is this a video conferencing app?
-                  </button>
-                </h2>
-                <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">
-                    <div class="d-flex align-item-center gap-2 answer-title-wrap">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
-                        <path
-                          d="M3.81249 4.01442C4.0469 3.78008 4.36478 3.64844 4.69624 3.64844C5.02769 3.64844 5.34558 3.78008 5.57999 4.01442L9.99999 8.43442L14.42 4.01442C14.6557 3.78672 14.9715 3.66073 15.2992 3.66358C15.627 3.66643 15.9405 3.79789 16.1723 4.02965C16.404 4.26141 16.5355 4.57492 16.5383 4.90267C16.5412 5.23042 16.4152 5.54617 16.1875 5.78192L11.7675 10.2019L16.1875 14.6219C16.4152 14.8577 16.5412 15.1734 16.5383 15.5012C16.5355 15.8289 16.404 16.1424 16.1723 16.3742C15.9405 16.606 15.627 16.7374 15.2992 16.7403C14.9715 16.7431 14.6557 16.6171 14.42 16.3894L9.99999 11.9694L5.57999 16.3894C5.34423 16.6171 5.02848 16.7431 4.70073 16.7403C4.37299 16.7374 4.05947 16.606 3.82771 16.3742C3.59595 16.1424 3.46449 15.8289 3.46164 15.5012C3.4588 15.1734 3.58479 14.8577 3.81249 14.6219L8.23249 10.2019L3.81249 5.78192C3.57815 5.54751 3.4465 5.22963 3.4465 4.89817C3.4465 4.56672 3.57815 4.24883 3.81249 4.01442Z"
-                          fill="black"
-                        />
-                      </svg>
-
-                      <h2 class="answer-title">No</h2>
-                    </div>
-
-                    <p class="answer-des">
-                      This app is not a replacement for Google Meet, Zoom or Microsoft Teams. It’s designed to run
-                      alongside these platforms, allowing you to share your document camera view during a call.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- 3 -->
               <div class="accordion-item">
                 <h2 class="accordion-header" id="heading3">
                   <button
@@ -1517,10 +1495,10 @@
                 <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                   <div class="accordion-body">
                     <div class="d-flex align-item-center gap-2 answer-title-wrap">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="black">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                         <path
-                          d="M3.4375 11.1406L7.8125 15.5156L16.5625 6.14062"
-                          stroke="white"
+                          d="M3.4375 10.9375L7.8125 15.3125L16.5625 5.9375"
+                          stroke="black"
                           stroke-width="1.875"
                           stroke-linecap="round"
                           stroke-linejoin="round"
@@ -1534,6 +1512,41 @@
                       This app is a web-based application designed for ChromeOS and runs directly in the Chrome browser.
                       To use this app in a Zoom, Meet, or Teams call, simply share the browser window or the tab where
                       the app is running.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 3 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading4">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse4"
+                    aria-expanded="false"
+                  >
+                    Do I need an internet connection to use this app?
+                  </button>
+                </h2>
+                <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    <div class="d-flex align-item-center gap-2 answer-title-wrap">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                          d="M3.81227 3.81227C4.04668 3.57793 4.36457 3.44629 4.69602 3.44629C5.02748 3.44629 5.34536 3.57793 5.57977 3.81227L9.99977 8.23227L14.4198 3.81227C14.6555 3.58457 14.9713 3.45858 15.299 3.46143C15.6268 3.46428 15.9403 3.59574 16.172 3.8275C16.4038 4.05926 16.5353 4.37277 16.5381 4.70052C16.541 5.02827 16.415 5.34402 16.1873 5.57977L11.7673 9.99977L16.1873 14.4198C16.415 14.6555 16.541 14.9713 16.5381 15.299C16.5353 15.6268 16.4038 15.9403 16.172 16.172C15.9403 16.4038 15.6268 16.5353 15.299 16.5381C14.9713 16.541 14.6555 16.415 14.4198 16.1873L9.99977 11.7673L5.57977 16.1873C5.34402 16.415 5.02827 16.541 4.70052 16.5381C4.37277 16.5353 4.05926 16.4038 3.8275 16.172C3.59574 15.9403 3.46428 15.6268 3.46143 15.299C3.45858 14.9713 3.58457 14.6555 3.81227 14.4198L8.23227 9.99977L3.81227 5.57977C3.57793 5.34536 3.44629 5.02748 3.44629 4.69602C3.44629 4.36457 3.57793 4.04668 3.81227 3.81227Z"
+                          fill="black"
+                        />
+                      </svg>
+
+                      <h2 class="answer-title">No</h2>
+                    </div>
+
+                    <p class="answer-des">
+                      No internet connection is required to use the app. All features—including live view, annotations,
+                      and snapshots—work offline. If you'd like to save screenshots to Google Drive, you'll need to sign
+                      in with your Google account.
                     </p>
                   </div>
                 </div>
@@ -1669,8 +1682,15 @@
               <div class="divider"></div>
             </div>
           </div>
-          <div class="row justify-content-center">
-            <p class="footer-text">© 2025 Camera Studio | All Rights Reserved</p>
+          <div class="container">
+            <div class="row justify-content-center align-items-center">
+              <div class="col-12 col-lg-4"></div>
+              <div class="col-12 col-lg-4"><p class="footer-text">© 2025 Camera Studio | All Rights Reserved</p></div>
+              <div class="col-12 col-lg-4 footer-doc-wrap">
+                <a href="" class="footer-text">Privacy Policy</a>
+                <a href="" class="footer-text">Terms of Service</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>

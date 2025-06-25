@@ -190,13 +190,17 @@
     padding: 7px;
   }
   .sec-type-9 .bg-color-shape-1-1 {
-    display: none;
+    /* display: none; */
   }
   .sec-type-9 .bg-color-shape-2-2 {
-    display: none;
+    /* display: none; */
   }
   .sec-type-9 .hero-section {
     padding: 60px 10px;
+  }
+  .sec-type-10 {
+    padding: 40px 0px;
+    background-color: #fff;
   }
   .sec-type-10 .slider-title {
     font-size: 28px;
@@ -285,5 +289,21 @@
   }
   .sec-type-11 {
     padding: 0px 0px 40px 0px;
+  }
+  .sec-type-11 .tag-img {
+    width: 150px;
+    height: auto;
+  }
+  .sec-type-6 .footer-doc-wrap {
+    padding-top: 20px;
+  }
+  .sec-type-9 {
+    padding: 100px 0px 0px 0px;
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+  }
+  .sec-type-10 .set-up-wrap {
+    padding: 10px;
   }
 }
