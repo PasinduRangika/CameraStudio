@@ -306,4 +306,10 @@
   .sec-type-10 .set-up-wrap {
     padding: 10px;
   }
+  .launching_soon .launches-text {
+    font-size: 30px;
+  }
+  .launching_soon .launches-des {
+    font-size: 20px;
+  }
 }

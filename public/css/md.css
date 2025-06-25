@@ -151,4 +151,7 @@
   .sec-type-3 .content_1 {
     padding-right: 0px;
   }
+  .launching_soon .lunching-message-svg {
+    display: none;
+  }
 }
