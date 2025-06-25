@@ -112,4 +112,15 @@
   .sec-type-1 {
     padding: 160px 0px 0px 0px;
   }
+  .sec-type-12 .quick-guide-title {
+    color: #000;
+    font-size: 18px;
+  }
+  .sec-type-12 .view-guide-btn {
+    padding: 8px 15px;
+    font-size: 15px;
+  }
+  .sec-type-12 .quick-guide-points {
+    font-size: 16px;
+  }
 }

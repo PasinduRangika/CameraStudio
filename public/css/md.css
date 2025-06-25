@@ -154,4 +154,22 @@
   .launching_soon .lunching-message-svg {
     display: none;
   }
+  .sec-type-12 .svg_1 {
+    display: none;
+  }
+  .sec-type-12 .t-img {
+    margin-bottom: 20px;
+  }
+  .sec-type-12 .quick-guide-title {
+    color: #000;
+    font-size: 24px;
+    text-align: center;
+  }
+  .sec-type-12 .quick-guide-point-wrap {
+    display: flex;
+    justify-content: center;
+  }
+  .sec-type-12 .view-guide-btn {
+    margin: 0 auto;
+  }
 }

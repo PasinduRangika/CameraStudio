@@ -312,4 +312,29 @@
   .launching_soon .launches-des {
     font-size: 20px;
   }
+  .sec-type-12 .quick-guide-title {
+    font-size: 16px;
+  }
+  .sec-type-12 .quick-guide-points {
+    font-size: 12px;
+  }
+  .sec-type-12 .title_main {
+    color: #000;
+    font-size: 24px;
+    text-align: center;
+  }
+  .sec-type-12 .title_sub {
+    font-size: 16px;
+    text-align: center;
+  }
+  .sec-type-12 .title-wrap {
+    padding-bottom: 30px;
+  }
+  .sec-type-12 .quick-guide-point-wrap {
+    display: flex;
+    justify-content: start;
+  }
+  .sec-type-12 .view-guide-btn {
+    margin: 15px auto;
+  }
 }
