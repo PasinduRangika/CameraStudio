@@ -1888,6 +1888,15 @@ html {
   padding: 31.51px 70px 31.51px 70px;
   border-radius: 24px 24px 0px 0px;
 }
+.sec-type-13 .preview-area.v2 {
+  height: 100%;
+}
+.sec-type-13 .preview-area.v2 {
+  border-radius: 0px;
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+  padding: 0px 36px 0px 46px;
+}
 
 .sec-type-13 .trouble-cards {
   min-height: 548px;
@@ -1916,6 +1925,9 @@ html {
 .sec-type-13 .step-tag.tag_4 {
   background: #f3b0ff;
 }
+.sec-type-13 .step-tag.tag_5 {
+  background: #fff8b0;
+}
 .sec-type-13 .tag-text {
   color: #000 !important;
   font-size: 14px;
@@ -1924,6 +1936,9 @@ html {
 }
 .sec-type-13 .step-area {
   padding: 30px;
+}
+.sec-type-13 .step-area.v2 {
+  padding: 30px 30px 30px 20px;
 }
 .sec-type-13 .step-text {
   color: #525252 !important;
@@ -1948,6 +1963,10 @@ html {
 .sec-type-13 .trouble-cards ul li span {
   font-weight: 600;
   color: #3f3f46;
+}
+.sec-type-13 .trouble-cards.v2 {
+  min-height: 266px;
+  padding: 0px;
 }
 
 /* launching banner */
