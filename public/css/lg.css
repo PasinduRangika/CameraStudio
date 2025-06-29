@@ -123,4 +123,45 @@
   .sec-type-12 .quick-guide-points {
     font-size: 16px;
   }
+  .sec-type-13 .trouble-cards {
+    min-height: 448px;
+  }
+  .launching_soon .lauching-bg-img {
+    display: none;
+  }
+  .launching_soon .launching_content-wrap {
+    position: static;
+  }
+  .launching_soon {
+    justify-content: center;
+    padding: 30px;
+  }
+  .launching_soon .launches-des {
+    padding-left: 0px;
+    text-align: center;
+  }
+  .launching_soon .countdown-days {
+    padding-left: 0px;
+    text-align: center;
+    justify-content: center;
+  }
+  .launching_soon .countdown-time {
+    padding-left: 0px;
+    justify-content: center;
+  }
+  .launching_soon .lunchform-remider {
+    padding-left: 0px;
+    justify-content: center;
+    display: flex;
+  }
+  .launching_soon .launch-message {
+    padding-left: 0px;
+    justify-content: center;
+  }
+  .launching_soon .launches-text {
+    text-align: center;
+  }
+  .launching_soon .lunching-message-svg {
+    margin-top: 0px;
+  }
 }

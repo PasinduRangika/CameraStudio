@@ -172,4 +172,20 @@
   .sec-type-12 .view-guide-btn {
     margin: 0 auto;
   }
+  .sec-type-13 .trouble-cards {
+    min-height: 548px;
+  }
+  .sec-type-13 .svg_2 {
+    display: none;
+  }
+  .sec-type-13 .preview-area.v2 {
+    border-radius: 0px;
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 24px;
+    padding: 31.51px 70px 31.51px 70px;
+  }
+  .sec-type-13 .trouble-card-inner {
+    flex-direction: column;
+  }
 }

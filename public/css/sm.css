@@ -337,4 +337,73 @@
   .sec-type-12 .view-guide-btn {
     margin: 15px auto;
   }
+  .sec-type-12 {
+    padding: 60px 0px 20px 0px;
+  }
+  .sec-type-14 .tag {
+    font-size: 36px;
+  }
+  .sec-type-13 .title_main {
+    font-size: 24px;
+    text-align: center;
+  }
+  .sec-type-13 .title_sub {
+    font-size: 16px;
+    text-align: center;
+  }
+  .sec-type-14 .accordion-button {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .sec-type-14 .accordion-body {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .sec-type-13 .preview-area.v2 {
+    border-radius: 0px;
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 24px;
+    padding: 10px 20px;
+    height: 100px;
+  }
+  .sec-type-13 .trouble-cards {
+    min-height: 48px;
+    height: fit-content;
+  }
+  .launching_soon .launching-submit {
+    padding: 10px 10px;
+    font-size: 12px;
+  }
+  .launching_soon .launching-input::placeholder {
+    font-size: 12px; /* or any smaller size you want */
+  }
+  .launching_soon {
+    display: block;
+    justify-content: center;
+    margin-top: 0px;
+  }
+  .launching_soon .digit {
+    font-size: 36px;
+  }
+  .launching_soon .countdown-timer .label {
+    font-size: 36px;
+  }
+  .launching_soon {
+    justify-content: center;
+    padding: 10px;
+  }
+  .launching_soon .lunching-text {
+    text-align: center;
+  }
+  .launching_soon .launching-input {
+    width: 60%;
+  }
+  .launching_soon .input-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  .sec-type-14 .tag {
+    padding-top: 40px;
+  }
 }

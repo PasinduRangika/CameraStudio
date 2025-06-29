@@ -369,7 +369,7 @@
         </div>
       </div>
     </section>
-    <!-- <section class="sec-type-13">
+    <section class="sec-type-13">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -394,7 +394,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-6">
+          <div class="col-12 col-lg-6">
             <div class="trouble-cards">
               <div class="preview-area">
                 <img
@@ -415,7 +415,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-12 col-lg-6">
             <div class="trouble-cards">
               <div class="preview-area">
                 <img
@@ -462,7 +462,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-12 col-lg-6">
             <div class="trouble-cards">
               <div class="preview-area">
                 <img src="../wp-content/uploads/preview_3.webp" alt="Camera Studio Camera in Use" class="preview-img" />
@@ -482,7 +482,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-12 col-lg-6">
             <div class="trouble-cards">
               <div class="preview-area">
                 <img src="../wp-content/uploads/preview_4.webp" alt="Camera Studio Camera in Use" class="preview-img" />
@@ -502,8 +502,8 @@
             </div>
           </div>
           <div class="col-12 trouble-cards v2">
-            <div class="row" style="height: 100%">
-              <div class="col-7 h-full">
+            <div class="d-flex trouble-card-inner">
+              <div class="col-12 col-lg-7 h-full">
                 <div class="preview-area v2">
                   <img
                     src="../wp-content/uploads/preview_5.webp"
@@ -512,7 +512,10 @@
                   />
                 </div>
               </div>
-              <div class="col-5">
+              <div
+                class="col-12 col-lg-5"
+                style="background-color: white; border-top-right-radius: 24px; border-bottom-right-radius: 24px"
+              >
                 <div class="step-area v2">
                   <div class="step-tag tag_5"><p class="tag-text">Can’t Change Resolution</p></div>
                   <p class="step-text">
@@ -531,7 +534,7 @@
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
     <section class="sec-type-14">
       <div class="container">
         <div class="row">
@@ -550,10 +553,9 @@
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-11">
+          <div class="col-12 col-lg-11">
             <div class="container py-5">
               <div class="accordion" id="faqAccordion">
-                <!-- 1 -->
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="heading10">
                     <button
@@ -580,7 +582,6 @@
                   </div>
                 </div>
 
-                <!-- 2 -->
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="heading3">
                     <button
@@ -614,7 +615,6 @@
                   </div>
                 </div>
 
-                <!-- 3 -->
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="heading4">
                     <button
@@ -649,7 +649,7 @@
                     </div>
                   </div>
                 </div>
-                <!-- 4 -->
+
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="heading11">
                     <button
@@ -684,7 +684,7 @@
                     </div>
                   </div>
                 </div>
-                <!-- 5 -->
+
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="heading6">
                     <button
@@ -755,7 +755,7 @@
                     </div>
                   </div>
                 </div>
-                <!-- 6 -->
+
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="heading7">
                     <button
@@ -812,7 +812,7 @@
                     </div>
                   </div>
                 </div>
-                <!-- 7 -->
+
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="heading8">
                     <button
@@ -842,6 +842,159 @@
                         This is a web-based PWA (Progressive Web App) that runs directly in the Chrome browser. You can
                         optionally install it to your chromeOS device for quick access
                       </p>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading21">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse21"
+                      aria-expanded="false"
+                    >
+                      Why is Camera Studio asking for camera access permission?
+                    </button>
+                  </h2>
+                  <div id="collapse21" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                      <div class="d-flex align-item-center gap-2 answer-title-wrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M3.21745 5C2.59477 5 1.99759 5.24736 1.55729 5.68766C1.11699 6.12797 0.869629 6.72514 0.869629 7.34783V14.6522C0.869629 15.2749 1.11699 15.872 1.55729 16.3123C1.99759 16.7526 2.59477 17 3.21745 17H11.5653C12.188 17 12.7851 16.7526 13.2254 16.3123C13.6657 15.872 13.9131 15.2749 13.9131 14.6522V13.831L17.2428 15.4963C17.4417 15.5958 17.6627 15.6427 17.8848 15.6327C18.1069 15.6227 18.3228 15.5561 18.5119 15.4392C18.701 15.3224 18.8571 15.1591 18.9654 14.9649C19.0737 14.7707 19.1305 14.5521 19.1305 14.3297V7.67026C19.1305 7.44793 19.0737 7.22929 18.9654 7.03511C18.8571 6.84092 18.701 6.67764 18.5119 6.56075C18.3228 6.44387 18.1069 6.37727 17.8848 6.36728C17.6627 6.35728 17.4417 6.40423 17.2428 6.50365L13.9131 8.168V7.34783C13.9131 6.72514 13.6657 6.12797 13.2254 5.68766C12.7851 5.24736 12.188 5 11.5653 5H3.21745ZM13.9131 9.91896V12.081L17.5653 13.9071V8.09183L13.9131 9.91896ZM12.3479 7.34783C12.3479 7.14027 12.2654 6.94121 12.1187 6.79444C11.9719 6.64767 11.7728 6.56522 11.5653 6.56522H3.21745C3.00989 6.56522 2.81083 6.64767 2.66407 6.79444C2.5173 6.94121 2.43485 7.14027 2.43485 7.34783V14.6522C2.43485 15.0842 2.78545 15.4348 3.21745 15.4348H11.5653C11.7728 15.4348 11.9719 15.3523 12.1187 15.2056C12.2654 15.0588 12.3479 14.8597 12.3479 14.6522V7.34783Z"
+                            fill="black"
+                          />
+                        </svg>
+
+                        <h2 class="answer-title">Camera Studio needs permission to use your camera.</h2>
+                      </div>
+
+                      <p class="answer-des">If you're seeing a message like "Camera Not Detected"</p>
+                      <ul>
+                        <li>Click <span>“Allow Camera”</span> in the popup.</li>
+                        <li>Make sure your browser has camera permissions enabled.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading22">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse22"
+                      aria-expanded="false"
+                    >
+                      How do I fix the “Camera Access Blocked” error?
+                    </button>
+                  </h2>
+                  <div id="collapse22" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                      <div class="d-flex align-item-center gap-2 answer-title-wrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                          <path d="M7 3.97998H17M1 11.98H11" stroke="black" stroke-width="1.5" stroke-linecap="round" />
+                          <path
+                            d="M1.00513 4C1.00513 5.65685 2.34827 7 4.00513 7C5.66198 7 7.00513 5.65685 7.00513 4C7.00513 2.34315 5.66198 1 4.00513 1C2.34827 1 1.00513 2.34315 1.00513 4Z"
+                            stroke="black"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                          />
+                          <path
+                            d="M10.9849 11.9912C10.9849 13.6481 12.328 14.9912 13.9849 14.9912C15.6417 14.9912 16.9849 13.6481 16.9849 11.9912C16.9849 10.3344 15.6417 8.99121 13.9849 8.99121C12.328 8.99121 10.9849 10.3344 10.9849 11.9912Z"
+                            stroke="black"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                          />
+                        </svg>
+
+                        <h2 class="answer-title">This usually happens if you denied camera access earlier.</h2>
+                      </div>
+
+                      <p class="answer-des">To fix it:</p>
+                      <ul>
+                        <li>
+                          Click the
+                          <span class="icon-svg">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="14"
+                              viewBox="0 0 18 17"
+                              fill="none"
+                            >
+                              <path
+                                d="M6.7832 4.54395H16.7832M0.783203 12.5439H10.7832"
+                                stroke="black"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                              />
+                              <path
+                                d="M0.788085 4.56397C0.788085 6.22082 2.13123 7.56397 3.78809 7.56397C5.44494 7.56397 6.78809 6.22082 6.78809 4.56397C6.78809 2.90711 5.44494 1.56396 3.78809 1.56396C2.13123 1.56396 0.788085 2.90711 0.788085 4.56397Z"
+                                stroke="black"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                              />
+                              <path
+                                d="M10.7681 12.5553C10.7681 14.2122 12.1112 15.5553 13.7681 15.5553C15.4249 15.5553 16.7681 14.2122 16.7681 12.5553C16.7681 10.8984 15.4249 9.5553 13.7681 9.5553C12.1112 9.5553 10.7681 10.8984 10.7681 12.5553Z"
+                                stroke="black"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                              />
+                            </svg>
+                          </span>
+                          <span>icon</span> next to the address bar
+                        </li>
+                        <li>Find Camera and <span>toggle access</span> on.</li>
+                        <li><span>Refresh</span> the page to apply changes.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading20">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse20"
+                      aria-expanded="false"
+                    >
+                      What does “Camera in Use” mean and how can I fix it?
+                    </button>
+                  </h2>
+                  <div id="collapse20" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                      <div class="d-flex align-item-center gap-2 answer-title-wrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M3.21745 5C2.59477 5 1.99759 5.24736 1.55729 5.68766C1.11699 6.12797 0.869629 6.72514 0.869629 7.34783V14.6522C0.869629 15.2749 1.11699 15.872 1.55729 16.3123C1.99759 16.7526 2.59477 17 3.21745 17H11.5653C12.188 17 12.7851 16.7526 13.2254 16.3123C13.6657 15.872 13.9131 15.2749 13.9131 14.6522V13.831L17.2428 15.4963C17.4417 15.5958 17.6627 15.6427 17.8848 15.6327C18.1069 15.6227 18.3228 15.5561 18.5119 15.4392C18.701 15.3224 18.8571 15.1591 18.9654 14.9649C19.0737 14.7707 19.1305 14.5521 19.1305 14.3297V7.67026C19.1305 7.44793 19.0737 7.22929 18.9654 7.03511C18.8571 6.84092 18.701 6.67764 18.5119 6.56075C18.3228 6.44387 18.1069 6.37727 17.8848 6.36728C17.6627 6.35728 17.4417 6.40423 17.2428 6.50365L13.9131 8.168V7.34783C13.9131 6.72514 13.6657 6.12797 13.2254 5.68766C12.7851 5.24736 12.188 5 11.5653 5H3.21745ZM13.9131 9.91896V12.081L17.5653 13.9071V8.09183L13.9131 9.91896ZM12.3479 7.34783C12.3479 7.14027 12.2654 6.94121 12.1187 6.79444C11.9719 6.64767 11.7728 6.56522 11.5653 6.56522H3.21745C3.00989 6.56522 2.81083 6.64767 2.66407 6.79444C2.5173 6.94121 2.43485 7.14027 2.43485 7.34783V14.6522C2.43485 15.0842 2.78545 15.4348 3.21745 15.4348H11.5653C11.7728 15.4348 11.9719 15.3523 12.1187 15.2056C12.2654 15.0588 12.3479 14.8597 12.3479 14.6522V7.34783Z"
+                            fill="black"
+                          />
+                        </svg>
+
+                        <h2 class="answer-title">This means another app (like Zoom or Meet) is using the camera.</h2>
+                      </div>
+
+                      <p class="answer-des">Depending on the situation:</p>
+                      <ul>
+                        <li><span>Close other apps</span> using the camera and refresh Camera Studio.</li>
+                        <li>
+                          If you have <span>multiple cameras,</span> use the dropdown to switch to a different one.
+                        </li>
+                        <li>
+                          If you're trying to change resolution or ratio, but can't, it's likely locked because another
+                          app is using the camera. Close that app and refresh.
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
@@ -927,6 +1080,7 @@
         </div>
       </div>
     </section> -->
+
     <footer>
       <section class="sec-type-6">
         <div class="container">
